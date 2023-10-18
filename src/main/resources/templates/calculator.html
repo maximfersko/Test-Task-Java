@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Handler</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+</head>
+<body>
+<form id="calculator-form">
+    <label for="expression">Enter numbers:</label>
+    <input type="text" id="expression" name="numbers">
+    <br>
+    <input type="radio" id="add" name="operation" value="add">
+    <label for="add">Add</label>
+    <br>
+    <input type="radio" id="multiply" name="operation" value="multiply">
+    <label for="multiply">Multiply</label>
+    <br>
+    <input type="radio" id="multiplyAndAdd" name="operation" value="multiply_And_Add">
+    <label for="multiplyAndAdd">Multiply first two and add third</label>
+    <br>
+    <input type="radio" id="custom" name="operation" value="custom">
+    <label for="custom">Divided two numbers</label>
+    <br>
+    <input type="submit" value="Calculate">
+
+    <div id="result" th:text="${result}"></div>
+
+</form>
+
+<script src="scripts/calculator.js"></script>
+
+
+</body>
+</html>
