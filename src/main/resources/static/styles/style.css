@@ -18,7 +18,6 @@ body {
     justify-content: center;
 }
 
-
 label {
     display: block;
     margin-bottom: 5px;
@@ -55,4 +54,16 @@ div#result {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+
+input[type="file"] {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #f0f0f0;
 }
